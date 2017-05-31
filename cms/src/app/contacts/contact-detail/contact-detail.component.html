@@ -2,22 +2,27 @@
   <div class="row">
     <div class="col-xs-12">
       <div class="panel-heading">
-           <span class="pull-left">
-        <img src="#"
-             alt="#"
+
+             <h2>{{ contact.name }}</h2>
+        <img src="{{contact.imgUrl}}"
+             alt="{{contact.name}}"
              class="image-responsive"
-             style="max-height: 50px;">
-      </span>
+             style="max-height: 100px;">
+
         <ul class="panel pull-right">
           <button type="button" class="btn btn-primary">Edit
             </button>
           <button type="button" class="btn btn-danger">Delete
           </button>
         </ul>
-        <hr>
+      </div>
+      <hr>
         <div class="panel-body">
-          <h4>Email:</h4>
-          <h4>Phone:</h4>
+          <span class="pull-left">
+          <h4>Email: {{ contact.email }}</h4>
+          <h4>Phone: {{ contact.phone}}</h4>
+            </span>
     </div>
   </div>
+</div>
 </div>
