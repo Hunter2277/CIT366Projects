@@ -20,7 +20,12 @@ contactSelectedEvent = new EventEmitter<Contact>();
   }
 
   ngOnInit() {
-
+    this.contactService.contactChangedEvent
+      .subscribe(
+        (contacts: Contact []) => {
+          this.contacts = contacts;
+        }
+      )
   }
 
 
