@@ -42,4 +42,11 @@ export class DocumentDetailComponent implements OnInit {
   this.documentsService.deleteDocument(this.document)
   }
 
+  onAddDocument() {
+    this.documentsService.addDocument(this.document)
+  }
+
+ // onUpdateDocument(){
+  //  this.documentsService.updateDocument(this.document)
+ // }
 }
